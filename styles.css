@@ -257,7 +257,7 @@ body {
 
 .sidebar-label {
     position: sticky; /* Both the sidebar div and div p is stickied */
-    top: 56px;
+    top: 55px;
 }
 
 .triangle {
