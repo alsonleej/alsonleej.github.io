@@ -66,7 +66,8 @@ body {
 .bio {
     width: 100%;
     text-align: center;
-    font-size: min(8vw, 1rem);
+    padding: 0px 12px 12px 0px;
+    font-size: min(8vw, 2rem);
     line-height: normal;
     color: white;
 }
