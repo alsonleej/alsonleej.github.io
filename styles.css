@@ -237,6 +237,10 @@ body {
     padding: 15px;
 }
 
+.future {
+    border: 5px solid greenyellow;
+}
+
 
 
 .timeline a {
