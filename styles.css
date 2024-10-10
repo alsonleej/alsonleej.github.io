@@ -9,7 +9,7 @@ body {
     text-align: left;
 }
 
-.headerbtn {
+#headerbtn {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -72,8 +72,8 @@ body {
 .bio {
     width: 100%;
     text-align: center;
-    padding: 0px 12px 12px 0px;
-    font-size: min(8vw, 1.5rem);
+    padding: 0px 30px 12px 30px;
+    font-size: min(8vw, 1.3rem);
     line-height: normal;
     color: white;
 }
