@@ -75,7 +75,7 @@ body {
     text-align: center;
     padding: 0px 30px 12px 30px;
     font-size: min(8vw, 1.3rem);
-    line-height: normal;
+    line-height: 150%;
     color: white;
 }
 
