@@ -250,7 +250,7 @@ body {
 .sidebar {
     height: auto;
     position: sticky;
-    top: 56px;
+    top: 60px;
     font-family: 'Saira', sans-serif;
     letter-spacing: 0.5px;
     font-weight: normal;
