@@ -21,7 +21,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: sticky; 
+    top: 50px;
 }
 
 .hero-text {
@@ -257,7 +258,7 @@ body {
 
 .sidebar-label {
     position: sticky; /* Both the sidebar div and div p is stickied */
-    top: 55px;
+    top: 56px;
 }
 
 .triangle {
