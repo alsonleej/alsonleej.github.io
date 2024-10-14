@@ -55,3 +55,4 @@ function foo(x) {
 // Breakpoint #1
 foo(1);
 // Breakpoint #5
+
