@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="homepage.js"></script>
+        <title>ALSON LEE</title>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="/images/favicon.ico" alt="Logo" width="25" height="25">&nbsp;   ALSON LEE</a> <!-- &nbsp;  is an invisible character -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accomplishments">Accomplishments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HEADER -->
+         <div>
+            <div class="hero-image">
+
+            </div>
+         <div class="hero-text">
+            <h1 id="header1" style="font-size:60px" class="fade-in-bottom">I am Alson Lee</h1>
+            <p id="header2" style="font-size:30px" class="fade-in-bottom">Problem Solver. Budding Technopreneur. Change Maker.</p>
+
+         </div>
+         <p class="bio fade-in-bottom">👋 Hi there! I'm Alson, currently a Year 1 undergraduate majoring in Computer Science at the National University of Singapore. I'm passionate about creating solutions that scale, that impact not just one or two, but thousands or even millions of people. I believe in the ability of software to change the world, and I'm excited to learn new technologies to leverage on this potential. In my free time, I like to keep up my fitness by gymming, running and playing recreational Tchoukball and Badminton. I also enjoy reading, particularly on topics relating to finance, nutrition, and mental well-being.</p>
+         <form method="get" class="section d-flex justify-content-center fade-in-bottom" action="ALSON LEE JIAN YANG - Resume.pdf">
+            <button class="headerbtn">Download my Résumé</button>
+         </form>
+         </div>
+
+        <!-- PROJECTS -->
+        <div id="projects" class="container-fluid section bg2 offset">
+            <br>
+            <div class="s1 d-flex justify-content-center">
+                <p class="fade-in-bottom">—</p>
+                <p class="fade-in-bottom">Projects</p>
+                <p class="fade-in-bottom">—</p>
+            </div>
+
+            <p class="s2 fade-in-bottom">A few random things I've done</p>
+
+            <div class="timeline">
+               <div class="event fade-in-bottom boxed project">
+                  <div class="desc">
+                      <h3>SUDOKU SOLVER</h3>
+                      <p class="appt">2024</p>
+                      <p class="time">Python, HTML, CSS, Javascript with Flask and Bootstrap v5</p>
+                      <br>
+                      <p>
+                      Web app that allows users to input their unsolved sudokus! Trying out both front-end (clientside) and back-end (serverside) development. Depth-first Search (DFS) backtracking is used as the algorithm to find solutions for the given sudoku.
+                      </p>
+                      <div style="display: inline-block;">
+                          <a href="https://sudokusolver-beryl.vercel.app/sudoku" target="_blank">Play Here!</a>
+                          <a href="https://github.com/alsonleej/sudokusolver" target="_blank">Github Link</a>
+                      </div>
+                  </div>
+               </div>
+
+                <div class="event fade-in-bottom boxed project">
+                    <div class="desc">
+                        <h3>NAMECARD GENERATOR</h3>
+                        <p class="appt">2023</p>
+                        <p class="time">VBA</p>
+                        <br>
+                        <p>
+                        I created this Macro to automate the menial creation of namecards via Microsoft Powerpoint. This Excel sheet accepts data to replace text fields in a given (and customizable) template, eliminating the tedious work of filling in the data manually and saving hours of work at a click of a button.
+
+                        </p>
+                        <a href="https://github.com/alsonleej/namecardgenerator" target="_blank">Github Link</a>
+                    </div>
+                </div>
+
+                <div class="event fade-in-bottom boxed project">
+                    <div class="desc">
+                        <h3>DOCUMENT AUTOFILLER</h3>
+                        <p class="appt">2023</p>
+                        <p class="time">VBA</p>
+                        <br>
+                        <p>
+                        I created this Macro to automate the filling up of transit slips used for despatching mail. This led to a 3x reduction in the usual time needed to fill up all required fields manually, and cut down on human error by 80%, enabling increased efficiency in my workplace. Sensitive details have been changed.
+                        </p>
+                        <a href="https://github.com/alsonleej/docautofiller" target="_blank">Github Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACCOMPLISHMENTS -->
+        <div id="accomplishments" class="container-fluid section bg3 offset">
+            <br>
+            <div class="s1 d-flex justify-content-center">
+                <p class="fade-in-bottom">—</p>
+                <p class="fade-in-bottom">Accomplishments</p>
+                <p class="fade-in-bottom">—</p>
+            </div>
+
+            <p class="s2 fade-in-bottom">Prizes and Certifications</p>
+            <form method="get" class="section d-flex justify-content-center fade-in-bottom"action="Achievement Certificates.pdf">
+               <button class="headerbtn">View All Certifications</button>
+            </form>
+
+            <div id="acyear2024" class="row g-0 timeline fade-in-bottom accomplishment-year offset"  >
+                <div class="col-12 col-md-2 sidebar fade-in-bottom">
+                  <div class="row g-0 d-flex sidebar-label">
+                     <div class="col col-md-12">2024</div>
+
+                    <a class="up triangle ms-auto ms-md-3 me-md-5  my-md-2" href="#accomplishments" title="Previous"></a>
+                    <a class="down triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2023" title="Next"></a>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-10 fade-in-bottom ">
+                    <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                        <div class="desc">
+                           <h3>NUS MERIT SCHOLARSHIP </h3>
+                           <p>The NUS Scholarships are highly coveted scholarships awarded to high calibre individuals who demonstrate academic excellence, present excellent co-curricular activities records and exhibit outstanding leadership qualities.</p>
+                        </div>
+                        
+                     </div>
+                 </div>
+            </div>
+
+            <div id="acyear2023" class="row g-0 timeline fade-in-bottom accomplishment-year offset"  >
+               <div class="col-12 col-md-2 sidebar fade-in-bottom">
+                  <div class="row g-0 d-flex sidebar-label">
+                     <div class="col col-md-12">2023</div>
+
+                    <a class="up triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2024" title="Previous"></a>
+                    <a class="down triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2021" title="Next"></a>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-10 fade-in-bottom ">
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>JLPT N4</h3>
+                         <p>While serving my National Service, I studied Japanese out of interest during my free time and decided to take up this qualification. Achieved A/A/A for Vocabulary / Grammar / Listening. </p>
+                      </div>
+                      
+                   </div>
+                </div>
+             </div>
+
+             <div id="acyear2021" class="row g-0 timeline fade-in-bottom accomplishment-year offset"  >
+               <div class="col-12 col-md-2 sidebar fade-in-bottom">
+                  <div class="row g-0 d-flex sidebar-label">
+                     <div class="col col-md-12">2021</div>
+
+                    <a class="up triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2023" title="Previous"></a>
+                    <a class="down triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2020" title="Next"></a>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-10 fade-in-bottom ">
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>HWA CHONG DIPLOMA WITH DISTINCTION</h3>
+                         <p>The Hwa Chong Diploma is an internationally recognised certification that Hwa Chong awards its students. It serves to recognise their outstanding holistic achievements in the following academic and non-academic areas: Academic Achievements, Service to the Community, Conduct, Scholastic Achievement, Leadership and Service</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>CENTAD</h3>
+                         <p>Awarded for completion of research project under HCI's Centre for Science Research & Talent Development. Assisted researchers from NUS in a project titled “ Nano-enhanced microencapsulated phase change materials for passive cooling in tropical Singapore”</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>GLOBAL GEOPOLITICS CONFERENCE - BEST DELEGATE</h3>
+                         <p>Model United Nations Conference.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>YALE MODEL UNITED NATIONS ASIA - HONOURABLE MENTION</h3>
+                         <p>I was chosen to represent my school (HCI) in a delegation to Yale, where we engaged in debates on labour rights and issues with top students from around the world.</p>
+                      </div>
+                      
+                   </div>
+                </div>
+             </div>
+
+             <div id="acyear2020" class="row g-0 timeline fade-in-bottom accomplishment-year offset"  >
+               <div class="col-12 col-md-2 sidebar fade-in-bottom">
+                  <div class="row g-0 d-flex sidebar-label">
+                     <div class="col col-md-12">2020</div>
+
+                    <a class="up triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2021" title="Previous"></a>
+                    <a class="down triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2019" title="Next"></a>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-10 fade-in-bottom ">
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>MOE PRE-UNIVERSITY SCHOLARSHIP - SCHOLARSHIP</h3>
+                         <p>Given to the top 5% of Singaporean students in the GCE 'O' Level. Paid for my tuition fees in junior college.</p>
+                      </div>
+                      
+                   </div>
+                </div>
+             </div>
+
+             <div id="acyear2019" class="row g-0 timeline fade-in-bottom accomplishment-year offset"  >
+               <div class="col-12 col-md-2 sidebar fade-in-bottom">
+                  <div class="row g-0 d-flex sidebar-label">
+                     <div class="col col-md-12">2019</div>
+
+                    <a class="up triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2020" title="Previous"></a>
+                    <a class="down triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2018" title="Next"></a>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-10 fade-in-bottom ">
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>SINGAPORE JUNIOR CHEMISTRY OLYMPIAD - GOLD</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>SINGAPORE JUNIOR PHYSICS OLYMPIAD - SILVER</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>ASTROCHALLENGE - NATIONAL CHAMPION</h3>
+                         <p>Largest Astronomy Competition in Singapore, hosted by NUS and NTU. Tests on theoretical (astrophysics) and practical astronomy.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>GLOBAL GEOPOLITICS CONFERENCE - OUTSTANDING DELEGATE (1ST RUNNER UP)</h3>
+                         <p>Model United Nations Conference. I acted as a delegate representing the United States of America and debated with other participants over key global issues.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>RIVER VALLEY MODEL UNITED NATIONS - BEST POSITION PAPER</h3>
+                         <p>I was awarded for writing the best paper detailing my stance on the given topic.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>NATIONAL YOUTH ACHIEVEMENT AWARD - SILVER LEVEL</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>EDUSAVE SCHOLARSHIP FOR INDEPENDENT SCHOOLS (ESIS)</h3>
+                         <p>Awarded to students within the top 5% of all students in the GCE 'O' Level Cohort and are admitted to an independent school.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>EDUSAVE SCHOLARSHIP 2019</h3>
+                         <p>Awarded to high achievers in academic performance and demonstrated good conduct.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>PERFECT PUNCTUALITY AWARD</h3>
+                         <p>Award conferred by Bukit Panjang Govt. High School to students who have never been late throughout the four years of secondary school.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>UNIVERSITY OF NEW SOUTH WALES REACH ASSESSMENTS: ENGLISH - OUTSTANDING  </h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                </div>
+             </div>
+
+             <div id="acyear2018" class="row g-0 timeline fade-in-bottom accomplishment-year offset"  >
+               <div class="col-12 col-md-2 sidebar fade-in-bottom">
+                  <div class="row g-0 d-flex sidebar-label">
+                     <div class="col col-md-12">2018</div>
+
+                    <a class="up triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2019" title="Previous"></a>
+                    <a class="down triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2017" title="Next"></a>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-10 fade-in-bottom ">
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>NATIONAL SCIENCE CHALLENGE - QUARTER-FINALIST</h3>
+                         <p>The NSC is a prestigious televised science challenge by A*STAR and Science Centre where my team had to brainstorm creative ideas to come up with innovative solutions.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>UNIVERSITY OF NEW SOUTH WALES INTERNATIONAL COMPETITIONS: ENGLISH - HIGH DISTINCTION:  TOP 1% NATIONWIDE</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>SINGAPORE JUNIOR CHEMISTRY OLYMPIAD - SILVER</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>NUS PHYSICS ENRICHMENT CAMP FINAL QUEST 2018 - GOLD</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>CCA ACTIVE PARTICIPATION AWARD 2018</h3>
+                         <p>I was awarded the Active Participation Award in recognition of my leadership and active participation as Science Quiz Head.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>WAN BOO SOW STUDENT LEADERSHIP AWARD 2018</h3>
+                         <p>This award is to recognize young leaders with an Excellent grade in the Student Leadership Index (SLi).</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>INTERNATIONAL C.B.PAUL SCIENCE QUIZ - SILVER (SENIOR CATEGORY)</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>NATIONAL YOUTH ACHIEVEMENT AWARD - BRONZE LEVEL</h3>
+                         <p>The NYAA is accorded to recognize youth in development in four areas - Service Learning, Outdoor Appreciation, Healthy Living and Community Leadership Initiative.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>ASTROCHALLENGE  - 1st RUNNER UP</h3>
+                         <p>Largest Astronomy Competition in Singapore, hosted by NUS and NTU. Tests on theoretical (astrophysics) and practical astronomy.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>ASTROCHALLENGE  - BEST PROJECT (JUNIOR CATEGORY)</h3>
+                         <p>Me and my team created the best video animation summarising and explaining a complicated astronomical concept to a layman audience.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>ASTRIGUE  - BEST PROJECT (JUNIOR CATEGORY)</h3>
+                         <p>Me and my team created the best video animation summarising and explaining a complicated astronomical concept to a layman audience. Astrigue is a premier Astronomy competition co-organized by HCI and RI annually.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>NATIONAL PUBLIC SPEAKING COMPETITION - GRAND FINALIST</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>EDUSAVE SCHOLARSHIP 2018</h3>
+                         <p>Awarded to high achievers in academic performance and demonstrated good conduct.</p>
+                      </div>
+                      
+                   </div>
+                </div>
+             </div>
+
+             <div id="acyear2017" class="row g-0 timeline fade-in-bottom accomplishment-year offset"  >
+               <div class="col-12 col-md-2 sidebar fade-in-bottom">
+                  <div class="row g-0 d-flex sidebar-label">
+                     <div class="col col-md-12">2017</div>
+
+                    <a class="up triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2018" title="Previous"></a>
+                    <a class="down triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2016" title="Next"></a>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-10 fade-in-bottom ">
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>NYP-IPS ASTRONOMY COMPETITION - SPECIAL MENTION (PROJECT)</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>BEST IN ENGLISH LANGUAGE</h3>
+                         <p>Topped the level in English Language in my school.</p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>INTERNATIONAL C.B.PAUL SCIENCE QUIZ - GOLD (JUNIOR CATEGORY)</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>UNIVERSITY OF NEW SOUTH WALES INTERNATIONAL COMPETITIONS: ENGLISH - DISTINCTION - TOP 3% NATIONWIDE</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>UNIVERSITY OF NEW SOUTH WALES INTERNATIONAL COMPETITIONS: SCIENCE - HIGH DISTINCTION - TOP 1% NATIONWIDE</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>AUSTRALIAN MATHEMATICAL COMPETITION - DISTINCTION - TOP 10% NATIONWIDE</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>SCIENCE AND MATHEMATICS PURSUIT - 1ST PLACE IN OUTDOOR CHALLENGE</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>SCIENCE AND MATHEMATICS PURSUIT - 1ST PLACE IN LABORATORY CHALLENGE</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>NATIONAL ENVIRONMENTAL QUIZ - TEAM CHAMPION</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>NATIONAL ENVIRONMENTAL QUIZ - 2ND PLACE (INDIVIDUAL)</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>EDUSAVE SCHOLARSHIP 2017</h3>
+                         <p>Awarded to high achievers in academic performance and demonstrated good conduct.</p>
+                      </div>
+                      
+                   </div>
+                </div>
+             </div>
+
+             <div id="acyear2016" class="row g-0 timeline fade-in-bottom accomplishment-year offset"  >
+               <div class="col-12 col-md-2 sidebar fade-in-bottom">
+                  <div class="row g-0 d-flex sidebar-label">
+                     <div class="col col-md-12">2016</div>
+
+                    <a class="up triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#acyear2017" title="Previous"></a>
+                    <a class="down triangle ms-auto ms-md-3 me-md-5 my-md-2" href="#education" title="Next"></a>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-10 fade-in-bottom ">
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>UNIVERSITY OF NEW SOUTH WALES INTERNATIONAL COMPETITIONS: SCIENCE - DISTINCTION - TOP 9% NATIONWIDE</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>UNIVERSITY OF NEW SOUTH WALES INTERNATIONAL COMPETITIONS: ENGLISH - CREDIT - TOP 12% NATIONWIDE</h3>
+                         <p></p>
+                      </div>
+                      
+                   </div>
+                   <div class="col-12 ms-auto fade-in-bottom accomplishment">
+                      <div class="desc">
+                         <h3>EDUSAVE SCHOLARSHIP 2016</h3>
+                         <p>Awarded to high achievers in academic performance and demonstrated good conduct.</p>
+                      </div>
+                      
+                   </div>
+                </div>
+             </div>
+
+
+
+        </div>
+
+        <!-- EDUCATION -->
+        <div id="education" class="container-fluid section bg4 offset">
+            <br>
+            <div class="s1 d-flex justify-content-center">
+                <p class="fade-in-bottom">—</p>
+                <p class="fade-in-bottom">Education</p>
+                <p class="fade-in-bottom">—</p>
+            </div>
+
+            <p class="s2 fade-in-bottom"> </p>
+
+            <ul class="timeline container-fluid">
+
+                <li class="row fade-in-bottom">
+                    <div class="col-2 lineyear">2024</div>
+                    <div class="col-10 line">
+                        <div class="row g-0">
+                            <div class="col-3 col-md-2"><img src="images/NUS_coat_of_arms.png" class="imgbox"></div>
+                            <div class="col-9" style="padding: 0% 2%">
+                                <h3>National University of Singapore</h3>
+                                <p class="appt">Computer Science</p>
+
+                            </div>
+                            <p class="col-12" style="padding: 3% 3%"></p>
+
+                            <ul class="timeline container-fluid cca">
+
+                              <li class="row g-0 event fade-in-bottom">
+                                  <div class="col-3 col-md-2"><img src="images/tembusu.jpg" class="imgbox"></div>
+                                  <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                      <h4>Tembusu College</h4>
+                                      <p class="appt"></p>
+                                      <p class="time"></p>
+                                      <br>
+                                      <p>
+                                      </p>
+                                  </div>
+                              </li>
+
+
+                          </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="row fade-in-bottom">
+                    <div class="col-2 lineyear">2022</div>
+                    <div class="col-10 line">
+                        <div class="row g-0">
+                            <div class="col-3 col-md-2"><img src="images/saf.png" class="imgbox"></div>
+                            <div class="col-9" style="padding: 0% 2%">
+                                <h3>Singapore Armed Forces</h3>
+                                <p class="appt">Signals Institute</p>
+
+                            </div>
+                            <p class="col-12" style="padding: 3% 3%">
+                            Served my mandatory National Service Obligations as a Signal Operator.</p>
+
+                            <ul class="timeline container-fluid cca">
+
+                              <li class="row g-0 event fade-in-bottom">
+                                  <div class="col-3 col-md-2"><img src="images/lancer.jpeg" class="imgbox"></div>
+                                  <div class="col-9 col-md-10 desc" style="padding: 0% 2%">
+                                      <h4>Lancer Overseas Training Base</h4>
+                                      <p class="appt"></p>
+                                      <p class="time"></p>
+                                      <br>
+                                      <p class="eventdesc">Spent 1.5 years as a permanent staff in Lancer, Brunei Darusalaam. Supported both combat radio communications for training, and HQ Operations.<br><br>
+
+                                       • Installed and maintained a host of networking hardware and software, upgraded camp-wide IT infrastructure leading to a 200% increase in broadband coverage<br>
+                                       • Developed a custom Excel macro and database system to streamline administrative forms for diplomatic bags, improving workflow by reducing processing time by 50% and eliminating human error<br>
+                                       • Operated critical radio equipment for 15 high-risk missions, provided real-time updates to senior management to conduct exercises<br>
+                                       • Facilitated flow of critical information amongst army and air force commanders in emergency situations, leading to helicopter search-and-rescue of five cadets<br>
+                                       • Led a team of 6 to provide technical and multimedia support for a diplomatic event with 700 attendees, including foreign ministers and defence attachés of 11 countries<br>
+                                      </p>
+                                  </div>
+                              </li>
+
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2"><img src="images/signals-logo.df5868a.png" class="imgbox"></div>
+                                 <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                     <h4>Signals Institute</h4>
+                                     <p class="appt"></p>
+                                     <p class="time"></p>
+                                     <br>
+                                     <p>
+                                     </p>
+                                 </div>
+                             </li>
+
+
+                          </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="row fade-in-bottom">
+                    <div class="col-2 lineyear">2020</div>
+                    <div class="col-10 line">
+                        <div class="row g-0">
+                            <div class="col-3 col-md-2"><img src="images/Logo_of_Hwa_Chong_Family_of_Schools.svg.png" class="imgbox"></div>
+                            <div class="col-9" style="padding: 0% 2%">
+                                <h3>Hwa Chong Institution</h3>
+                                <p class="appt">Singapore-Cambridge GCE A-Level <b>90 RP + H3 Chem Merit</b></p>
+
+                            </div>
+                            <p class="col-12" style="padding: 3% 3%"></p>
+                            <ul class="timeline container-fluid cca">
+
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2" ><img src="images/smtp.jpg" class="imgbox"></div>
+                                 <div class="col-8 col-md-9" style="padding: 0% 2%">
+                                    <h4>
+                                       Science Math Talent Programme (SMTP)
+                                    </h4>
+                                    <p class="appt">
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       The Hwa Chong Science and Math Talent Programme (SMTP) is HCI's in-house special programme for high ability students with a passion for Science and Mathematics. Hwa Chong SMTP Programme aims to: ● provide an integrated and enriched curriculum which caters for high ability Science/ Mathematics students; ● provide a stimulating environment that nurtures the independent and inquisitive learner; and ● create opportunities for passion-focused activities, higherlevel academic pursuits and other scholastic endeavours. ● develop learners who can communicate confidently and think critically
+                                    </p>
+                                 </div>
+                              </li>
+
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2" ><img src="images/ssrc.png" class="imgbox"></div>
+                                 <div class="col-8 col-md-9" style="padding: 0% 2%">
+                                    <h4>
+                                       Students' Science Research Club (SSRC)
+                                    </h4>
+                                    <p class="appt">
+                                       ACTIVITIES-IN-CHARGE
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       In charge of SSRC major activities such as Science Sharing, Interest Groups and Science Game Show.
+                                       Continually planned and explore new SSRC activities to engage the members.
+                                       Allocated manpower, procured logistics and drafted action plans to ensure smooth running of SSRC events.
+                                    </p>
+                                 </div>
+                              </li>
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2"><img src="images/isyf.png" class="imgbox"></div>
+                                 <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                    <h4>
+                                       International Science Youth Festival (ISYF)
+                                    </h4>
+                                    <p class="appt">
+                                       DIALOGUES AND DISCUSSIONS (DnD) Head
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       The International Science Youth Festival (ISYF) is a prestigious science and research fair attended by hundreds of delegates and top science students across the world.
+                                       In 2021, I hosted Nobel Laureate Sir Konstantin Novoselov in the ISYF Grand Ceremony in a plenary panel discussion on his research work, and the latest trends in material science.
+                                       I also trained and led the Dialogues & Discussions team in the art of hosting talks by esteemed scientists and researchers.
+                                    </p>
+                                 </div>
+                              </li>
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2"><img src="" class="imgbox"></div>
+                                 <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                    <h4>
+                                       Centre for Science Research & Talent Development (CENTAD)
+                                    </h4>
+                                    <p class="appt">
+                                       Member
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       Assisted researchers from NUS in a project titled “ Nano-enhanced microencapsulated phase change materials for passive cooling in tropical
+                                       Singapore” I did a literature review and presentation materials for exhibition in the CENTAD conference.
+                                       Learnt to read and analyse research papers to find and compile important research findings.
+                                    </p>
+                                 </div>
+                              </li>
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2"><img src="images/hacas.jpg" class="imgbox"></div>
+                                 <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                    <h4>
+                                       Humanities & Current Affairs Society (HACAS)
+                                    </h4>
+                                    <p class="appt">
+                                       Member
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       Engages in training sessions, and participated in delegations to Model United Nations Conferences.
+                                    </p>
+                                 </div>
+                              </li>
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2"><img src="images/hccri.jpg" class="imgbox"></div>
+                                 <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                    <h4>
+                                       Hwa Chong Conflict Resolution & Inquiry (HCCRI)
+                                    </h4>
+                                    <p class="appt">
+                                       Under-Secretary-General of Administration
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       HCCRI is HCI's flagship Model UN conference. I processed hundreds of delegate applications, responded to queries, managed the budget, and made the website.
+                                    </p>
+                                 </div>
+                              </li>
+
+
+                          </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="row fade-in-bottom">
+                    <div class="col-2 lineyear">2016</div>
+                    <div class="col-10 line">
+                        <div class="row g-0">
+                            <div class="col-3 col-md-2"><img src="images/BPGHSSchoolCrest.jpg" class="imgbox" style="border-radius: 50%;"></div>
+                            <div class="col-9" style="padding: 0% 2%">
+                                <h3>Bukit Panjang Government High School</h3>
+                                <p class="appt">Singapore-Cambridge GCE O-Level <b>L1R5: 2 (6 raw)</b></p>
+
+                            </div>
+                            <p class="col-12" style="padding: 3% 3%"></p>
+                            <ul class="timeline container-fluid cca">
+
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2"><img src="" class="imgbox"></div>
+                                 <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                    <h4>
+                                       Science Society: Science Quiz
+                                    </h4>
+                                    <p class="appt">
+                                       UNIT HEAD
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       Planned lessons, activities , practical experiments and games for the unit for enrichment in Science.
+                                       Liaised with external tutors to come in to help with the lessons.
+                                       Managed the planning of sending school delegations to Science competitions, and provided training to CCA Members.
+                                       Involved in the planning, logistics and execution for the Science Team SIA Scientific Outreach Project, where we went to external beneficiaries (Primary schools), to conduct a large-scale Science Fair for the younger kids.
+                                       Won the CCA Active Participation Award, recognized by the school as most active member of Science Team.
+                                    </p>
+                                 </div>
+                              </li>
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2"><img src="" class="imgbox"></div>
+                                 <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                    <h4>
+                                       Model United Nations Interest Group
+                                    </h4>
+                                    <p class="appt">
+                                       VICE-CHAIRPERSON
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       Involved in the planning and liaising with external Model UN conference hosts to send school delegations to participate in Model UN conferences.
+                                       Conduct Model UN training workshops for my school.
+                                    </p>
+                                 </div>
+                              </li>
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2"><img src="" class="imgbox"></div>
+                                 <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                    <h4>
+                                       Humanities Interest Group
+                                    </h4>
+                                    <p class="appt">
+                                       Member
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       Assisted in the communication between Teacher IC and students in the planning of outings and meetings.
+                                    </p>
+                                 </div>
+                              </li>
+                              <li class="row g-0 event fade-in-bottom">
+                                 <div class="col-3 col-md-2"><img src="images/globalscholarslogo.png" class="imgbox"></div>
+                                 <div class="col-9 col-md-10" style="padding: 0% 2%">
+                                    <h4>
+                                       Global Scholars Programme
+                                    </h4>
+                                    <p class="appt">
+                                       CHAIRPERSON
+                                    </p>
+                                    <p class="time">
+                                    </p>
+                                    <br>
+                                    <p class="eventdesc">
+                                       Was selected by the school to take part in the Global Scholars Initiative launched by Global Cities Inc., New York, which included workshops to learn more about global affairs and evolving global trends in science and technology, with the opportunity to connect and discuss with students worldwide online.
+                                       Led a Student-Initiated-Activity (SIA) project in conjuction with the Global Scholars Programme called CourteoUS to produce a series of videos (with other members in acting or filming roles) displaying simple acts of courtesy in various situations and encouraging others to be more courteous in their daily lives.
+                                    </p>
+                                 </div>
+                              </li>
+
+                          </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact" class="container-fluid section bg5">
+            <br>
+            <div class="s1 d-flex justify-content-center">
+                <p class="fade-in-bottom">—</p>
+                <p class="fade-in-bottom">CONTACT</p>
+                <p class="fade-in-bottom">—</p>
+            </div>
+            <br>
+            <br>
+            <div class="d-flex justify-content-around align-items-center" style="height: 100px">
+                <a href="https://www.linkedin.com/in/alson-lee-286881227/"><img class="contactlogo" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"></a>
+                <a href="mailto:alsonleej@gmail.com"><img class="contactlogo" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail"></a>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <p class="d-flex justify-content-around align-items-end" style="color: grey; margin: 16px 0px"> ©Design and Code by Alson Lee, 2024.</p>
+
+
+
+
+    </body>
+</html>
