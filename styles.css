@@ -340,9 +340,9 @@ body {
 
 /*  hover to expand accomplishment text only, for PC only */
 .no-touch .accomplishment:hover p {
-    max-height: 1000px; /* Expand to show full content */
-    white-space: normal; /* Allow text to wrap */
-    overflow: visible; /* Make sure overflow text is visible */
+    max-height: 1000px !important; /* Expand to show full content */
+    white-space: normal !important; /* Allow text to wrap */
+    overflow: visible !important; /* Make sure overflow text is visible */
 }
 
 /* text color changes upon hover for Education */
