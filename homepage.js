@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
             $(this).find('.col-12:not(:first-child)').addClass('expanded');
         });
 
-        $('.accomplishment-year > .col-md-10 > .col-12').click(function() {
-            $(this).find('desc > p').toggleClass('expanded');
+        $('.accomplishment').off('click').click(function() {
+            $(this).find('.desc > p').toggleClass('expanded');
         });
 
         $('.accomplishment-year .col-md-10').on('contextmenu', function(event) {
