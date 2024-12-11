@@ -338,8 +338,8 @@ body {
     max-height: 25px;            /* Set max-height to 20 initially */
 }
 
-/*  hover to expand accomplishment text only */
-.accomplishment:hover p {
+/*  hover to expand accomplishment text only, for PC only */
+.no-touch .accomplishment:hover p {
     max-height: 1000px; /* Expand to show full content */
     white-space: normal; /* Allow text to wrap */
     overflow: visible; /* Make sure overflow text is visible */

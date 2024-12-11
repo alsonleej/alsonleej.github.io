@@ -12,8 +12,30 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 800);
 
     setHoverandExpand('.project', 'p'); // For .project, expand <p> elements
-    setHoverandExpand('.accomplishment-year .col-md-10', '.col-12:not(:first-child)'); // For .accomplishment-year .col-md-10, expand .col-12:not(:first-child)
+    
     setHoverandExpand('.event', 'p'); // For .event, expand p
+
+    // Check if touchscreen device
+    if ('ontouchstart' in window || navigator.maxTouchPoints) {
+        // For touchscreen devices, 'hover' is a tap. 
+        // So the following modifications apply: for Achievement section, instead of tap to show full text (since this will also collapse the rest of the cards), short tap to show full text and long-tap to collapse
+        $('.accomplishment').addClass('no-touch') // disable hover functionality
+        
+        $('.accomplishment-year .col-md-10').click(function() {
+            $(this).find('.col-12:not(:first-child)').addClass('expanded');
+        });
+
+        $('.accomplishment-year > .col-md-10 > .col-12').click(function() {
+            $(this).find('desc > p').toggleClass('expanded');
+        });
+
+        $('.accomplishment-year .col-md-10').on('contextmenu', function(event) {
+            event.preventDefault(); // Prevent the default right-click menu
+            $(this).find('.col-12:not(:first-child)').removeClass('expanded');
+        });
+    } else {
+        setHoverandExpand('.accomplishment-year .col-md-10', '.col-12:not(:first-child)'); // For .accomplishment-year .col-md-10, expand .col-12:not(:first-child)
+    }
 })
 
 /* fades in other text when it enters viewport */
@@ -54,3 +76,4 @@ function setHoverandExpand(hover, expand){
         $(this).find(expand).toggleClass('expanded');
     });
 }
+
