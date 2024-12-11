@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if ('ontouchstart' in window || navigator.maxTouchPoints) {
         // For touchscreen devices, 'hover' is a tap. 
         // So the following modifications apply: for Achievement section, instead of tap to show full text (since this will also collapse the rest of the cards), short tap to show full text and long-tap to collapse
-        $('.accomplishment').addClass('no-touch') // disable hover functionality
-        
+
         $('.accomplishment-year .col-md-10').click(function() {
             $(this).find('.col-12:not(:first-child)').addClass('expanded');
         });
@@ -34,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $(this).find('.col-12:not(:first-child)').removeClass('expanded');
         });
     } else {
+        $('.accomplishment').addClass('no-touch'); // not touchscreen; enable hover functionality
         setHoverandExpand('.accomplishment-year .col-md-10', '.col-12:not(:first-child)'); // For .accomplishment-year .col-md-10, expand .col-12:not(:first-child)
     }
 })
