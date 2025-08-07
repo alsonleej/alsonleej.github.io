@@ -77,3 +77,9 @@ function setHoverandExpand(hover, expand){
     });
 }
 
+/* Function to close the header banner */
+function closeBanner() {
+    const banner = document.getElementById('header-banner');
+    banner.classList.add('hidden');
+}
+

@@ -350,3 +350,147 @@ body {
 .eventdesc:hover {
     text-decoration: underline;
 }
+
+/* Header Banner Styles */
+.header-banner {
+    background-color: #ffeb3b;
+    color: #000;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner-content span {
+    flex: 1;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.banner-content a {
+    color: #0066cc;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.banner-content a:hover {
+    color: #004499;
+}
+
+.banner-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    padding: 0;
+    margin-left: 15px;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.banner-close:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust navbar position when banner is visible */
+.navbar {
+    top: 50px !important;
+}
+
+/* Adjust hero image when banner is visible */
+.hero-image {
+    top: 100px !important;
+}
+
+/* Responsive banner height adjustments */
+@media (max-width: 768px) {
+    .header-banner {
+        padding: 12px 0;
+    }
+    
+    .banner-content span {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    .banner-close {
+        font-size: 20px;
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* Adjust navbar and hero image for mobile */
+    .navbar {
+        top: 60px !important;
+    }
+    
+    .hero-image {
+        top: 110px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-banner {
+        padding: 15px 0;
+    }
+    
+    .banner-content {
+        padding: 0 15px;
+    }
+    
+    .banner-content span {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+    
+    .banner-close {
+        font-size: 18px;
+        width: 26px;
+        height: 26px;
+        margin-left: 10px;
+    }
+    
+    /* Adjust navbar and hero image for small mobile */
+    .navbar {
+        top: 70px !important;
+    }
+    
+    .hero-image {
+        top: 120px !important;
+    }
+}
+
+/* Hide banner when closed */
+.header-banner.hidden {
+    display: none;
+}
+
+/* Adjust navbar and hero image when banner is hidden */
+.header-banner.hidden + .navbar {
+    top: 0 !important;
+}
+
+.header-banner.hidden ~ div .hero-image {
+    top: 50px !important;
+}
